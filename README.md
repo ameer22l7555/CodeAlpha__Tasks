@@ -1,7 +1,7 @@
 # CodeAlpha__Tasks
 
 
-Task 1: Titanic Classification
+# Task 1: Titanic Classification
 Objective: Create a classification system to predict whether a person would survive the Titanic sinking based on socio-economic status, age, gender, and other factors.
 
 Steps:
@@ -30,3 +30,37 @@ Evaluate the Model:
 
 Make predictions on the test data.
 Evaluate the model's performance using metrics like accuracy, classification report, and confusion matrix.
+
+
+# Task 2: Stock Price Prediction using LSTM
+Objective: Predict the stock price of any company using an LSTM model.
+
+Steps:
+
+Import Libraries:
+
+Import necessary libraries like pandas, numpy, matplotlib, MinMaxScaler, Sequential, and LSTM.
+Download and Load the Dataset:
+
+Use the yfinance library to download stock price data.
+Load the dataset and inspect the first few rows.
+Preprocess the Data:
+
+Filter the dataset to use only the Close price.
+Scale the data using MinMaxScaler.
+Split the data into training and test sets.
+Create sequences of 60 days of data for training the LSTM.
+Build and Train the LSTM Model:
+
+Build an LSTM model using Sequential.
+Add LSTM layers and Dense layers.
+Compile and train the model.
+Make Predictions:
+
+Prepare the test data.
+Make predictions using the trained model.
+Inverse transform the scaled predictions.
+Evaluate the Model:
+
+Calculate the RMSE (Root Mean Squared Error).
+Plot the training and predicted stock prices for visualization.
